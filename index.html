@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h2 style="left: 180px; position: relative;">Kill the bugs</h2>
+    <div id="body-one"></div>
+    <div id="score"></div>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <div id="live"></div>
+    <div id="status"></div>
+    <div id="timer"></div>
+    <progress id="boss-live" class="hidden" value="100" max="100" min="0"></progress>
+    <div id="instruction">
+      <h2>Instruction</h2>
+      <ul>
+        <li>Use mouse to control the direction of your hero</li>
+        <li>You can press esc to pause</li>
+        <li>
+          Press the space key to fire the bullet(Long press to create powerful
+          bullet)
+        </li>
+        <li>Cheat code available below: (Hint: favorite class in Langara)</li>
+      </ul>
+    </div>
+    <button style="position: absolute; left: 220px; top: 300px; font-size: 2em; padding: 0.2em;" id="start-btn">
+      Start
+    </button>
+    <button style="position: absolute; left: 205px; top: 350px; font-size: 2em; padding: 0.2em" id="restart-btn">
+      Restart
+    </button>
+    <img src="hero.png" width="70" height="70" id="img" style="display: none" />
+    <img src="bug-32.png" width="30" height="30" id="bug" style="display: none" />
+    <img src="boss1.png" width="70" height="70" id="boss1" style="display: none" />
+    <img src="boss2.png" width="70" height="70" id="boss2" style="display: none" />
+    <img src="boom.png" width="70" height="70" id="boom" style="display: none" />
+    <img src="power.png" width="70" height="70" id="power" style="display: none" />
+    <img src="bullet.png" width="200" height="200" id="bullet" style="display: none" />
+    <input type="text" id="cheat-code" />
+    <button id="cheat-code-submit">Verify</button>
+    <form id="cheat-form" style="display: none;">
+      <label for="live-input">Live:</label>
+      <input type="text" name="live-input" id="live-input" />
+      <label for="bug-amount-input">Bug amount:</label>
+      <input type="text" name="bug-amount-input" id="bug-amount-input" />
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#canvas {
+    background-color: aquamarine
+}
+
+#head {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #4caf50;
+    left: 0;
+    top: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+ul li {
+    padding-top: 10px;
+    padding-left: 20px;
+}
